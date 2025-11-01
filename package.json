@@ -1,0 +1,49 @@
+{
+  "name": "@smounters/fsm",
+  "version": "1.0.0",
+  "description": "A lightweight, type-safe finite state machine implementation for TypeScript/JavaScript with full async/await support",
+  "author": {
+    "name": "Serhii Mykhailovskyi",
+    "email": "sergio@smounters.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "finite-state-machine",
+    "fsm",
+    "state-machine",
+    "typescript",
+    "async",
+    "state",
+    "transition"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smounters/fsm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smounters/fsm/issues"
+  },
+  "homepage": "https://github.com/smounters/fsm#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
+}

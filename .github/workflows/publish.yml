@@ -35,9 +35,9 @@ jobs:
         run: echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
 
       - name: Update package.json version
-        run: pnpm version ${{ steps.get_version.outputs.version }} --no-git-checks
+        run: pnpm version v${{ steps.get_version.outputs.version }} ---no-commit-hooks --no-git-tag-version --allow-same-version
 
       - name: Publish to npm
-        run: pnpm publish --no-git-checks --access public
+        run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
